@@ -2,9 +2,9 @@ import pandas as pd
 from collections import Counter
 
 def anonymize(path='reviews_full_v10-1.csv', 
-              save_path='reviews_anonymized.csv', 
+              save_path='reviews_anonymized_fulltext.csv', 
               anon_columns=['User', 'Release'],
-              columns = ['User', 'Release', 'Combined_Genre', 'Score', 'Review_title'],
+              columns = ['User', 'Release', 'Combined_Genre', 'Score', 'Cleansed Text'],
               thresholds = {
                   'User': 10,
                   'Release': 10,
