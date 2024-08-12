@@ -4,7 +4,7 @@ from collections import Counter
 def anonymize(path='reviews_full_v10-1.csv', 
               save_path='reviews_anonymized.csv', 
               anon_columns=['User', 'Release'],
-              columns = ['User', 'Release', 'Combined_Genre', 'Score', 'Cleansed Text'],
+              columns = ['User', 'Release', 'Combined_Genre', 'Score', 'Review_title'],
               thresholds = {
                   'User': 10,
                   'Release': 10,
